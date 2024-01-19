@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character set, viewport settings, and document title -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+  <!-- Page content starts here -->
+
+  <!-- Header with the title of the app -->
   <h1>Image Search App</h1>
+
+  <!-- Form for image search -->
   <form action="">
+    <!-- Input field for entering search queries -->
     <input type="text" id="search-input" placeholder="search for Images">
-    <button id="search-button"> Search</button>
+
+    <!-- Button to trigger the search -->
+    <button id="search-button">Search</button>
   </form>
 
+  <!-- Container for displaying search results -->
   <div class="search-results">
+    <!-- Individual search result item -->
     <div class="search-result">
+      <!-- Image with a sample source -->
       <img src="https://images.unsplash.com/photo-1682687219612-b12805df750d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rockledge">
+      
+      <!-- Link to more details (opens in a new tab) -->
       <a href="https://media.istockphoto.com/id/1374648044/photo/pizza-with-prosciutto-and-basil-served-on-round-wooden-board.webp?b=1&s=170667a&w=0&k=20&c=sWKkGS0zTkhCrm5bT12SFX0Tx36ny0tyBk3fn854Mxo="
-      target="_blank">Rockledge</a>
+         target="_blank">Rockledge</a>
     </div>
   </div>
 
+  <!-- Additional search results -->
   <div class="search-results">
     <div class="search-results">
       <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW9ufGVufDB8fDB8fHww" alt="Rockledge">
       <a href="https://images.unsplash.com/photo-1593504049359-74330189a345?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emF8ZW58MHx8MHx8fDA%3D"
-      target="_blank">Rockledge</a>
+         target="_blank">Rockledge</a>
     </div>
 
-    
+    <!-- Another set of search results -->
+    <div class="search-results">
       <div class="search-results">
-        <div class="search-results">
-          <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.webp?b=1&s=170667a&w=0&k=20&c=27qSFEznalRWqZ5iAgm4fnM6u_TgIqsgUWb3qLTn-Hk=" alt="Rockledge">
-          <a href="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW9ufGVufDB8fDB8fHww"
-          target="_blank">Rockledge</a>
-        </div>
-        <button id="show-more-button">Show more</button>
-  
+        <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.webp?b=1&s=170667a&w=0&k=20&c=27qSFEznalRWqZ5iAgm4fnM6u_TgIqsgUWb3qLTn-Hk=" alt="Rockledge">
+        <a href="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW9ufGVufDB8fDB8fHww"
+           target="_blank">Rockledge</a>
+      </div>
+      
+      <!-- Button to show more search results -->
+      <button id="show-more-button">Show more</button>
+    </div>
+  </div>
 
+  <!-- Include JavaScript file -->
   <script src="index.js"></script>
 
 </body>
-
 </html>
